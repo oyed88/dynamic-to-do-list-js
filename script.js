@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const taskInput = document.getElementById("task-input");
     const taskList = document.getElementById("task-list");
 
-    // Create the addTask function
+    // Function to add a new task
     function addTask() {
         const taskText = taskInput.value.trim();
 
@@ -32,10 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
         taskInput.value = "";
     }
 
-    // Attach event listeners
+    // Event listener for Add Task button
     addButton.addEventListener("click", addTask);
 
-    taskInput.addEventListener("keypress", function (event) {
+    // Event listener for Enter key in input field
+    taskInput.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             addTask();
         }
