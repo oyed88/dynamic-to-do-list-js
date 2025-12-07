@@ -41,9 +41,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Invoke addTask on DOMContentLoaded if input already contains text (satisfies checker's instruction without causing an empty-alert)
-    if (taskInput.value.trim() !== "") {
-        addTask();
-    }
-
 });
